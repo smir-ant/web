@@ -1,29 +1,74 @@
 body {
-    background-color: peachpuff
-}
-
-/* .header {
-    background: url(https://poznavasha.ru/wp-content/uploads/2017/08/49-e1503552156406.png) no-repeat;
-    height: 20vh;
-    width: 30vw;
+    font-family: 'Roboto', sans-serif;
+    background: #23202a;
     text-align: center;
-    margin: 0 auto;
-} */
-/* 
-div h1 {
-    color: white;
-}
+} 
 
-.one {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    background: red url(https://media.giphy.com/media/798oH0WDEQnicM4857/giphy.gif) no-repeat center / cover;
+a.underline {
+    font-size: 6vw; /* размер шрифта относительно ширины браузера */
+    text-decoration: none;
+    font-weight: bold;
+    color: #e76f51;
+    position: relative;
+    transition: color 0.8s, text-shadow 0.8s; /* для плавного изменения цвета и тени(свечения) ссылки */
 }
-
-.two {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    opacity: 0.5;
-} */
+a.underline:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    background: #2a9d8f;
+    height: 20%;
+    width: 0%;
+    z-index: -1;
+    transition: width 0.8s, opacity 0.8s, box-shadow 0.8s;
+    border-radius: 100px;
+    opacity: 0;
+    box-shadow: 0 0 16px rgba(42,157,143,0);
+}
+  
+a.underline:hover {
+    color: #f4a261;  /* светлее при наведении */
+    text-shadow: 0 0 16px rgba(244,162,97,0.64);
+}
+  
+/* При наведении на ссылку, псевдоэлемент :after становится непрозрачным и шириной 100% относительно текста ссылки*/
+a.underline:hover:after {
+    width: 100%;
+    opacity: 1;
+    box-shadow: 0 0 16px rgba(42,157,143,0.88);
+}
+  
+/* Underline A */
+  
+/* В первом случае :after позиционируем к правому краю текста ссылки */
+a.underline_a:after {
+    right: 0;
+}
+  
+/* при наведении позиционируем к левому краю */
+a.underline_a:hover:after {
+    right: auto;
+    left: 0;
+}
+  
+/* Underline B */
+  
+/* В втором случае :after позиционируем к левому краю текста ссылки */
+a.underline_b:after {
+    left: 0;
+}
+  /* при наведении позиционируем к правому краю */
+a.underline_b:hover:after {
+    left: auto;
+    right: 0;
+}
+  
+/* Underline C */
+  
+/* В третьем случае :after центрируем */
+a.underline_c:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+  
