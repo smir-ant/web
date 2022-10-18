@@ -1,0 +1,56 @@
+/* .grey {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 0px auto;
+}
+
+.purple {
+    width: 100px;
+    height: 100px;
+    rgba - red green blue и alpha(коэффициент прозрачность)
+    background-color: rgba(147, 31, 31, 0.5);
+}
+*/
+
+.image {
+    width: 250px;
+    height: 250px;
+    background: url("angry-cat.gif") no-repeat center / cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.prozrachnost {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.5;
+}
+
+.rectangle {
+    height: 100px;
+    width: 250px;
+}
+
+.warning {
+    background-color: deeppink;
+}
+
+.info {
+    background-color: cornflowerblue;
+}
+
+.rectangle h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.symbol::before {
+    content: "🧨";
+}
+
+.symbol::after {
+    content: "✨";
+}
