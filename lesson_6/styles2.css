@@ -1,0 +1,37 @@
+.one {
+    height: 100px;
+    width: 100px;
+    background-color: darkgreen;
+    display: inline-block;
+}
+
+.two {
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+    display: inline-block;
+}
+
+
+.second {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin-bottom: 30px;
+}
+
+.third {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin-top: 10px;
+}
+
+img {
+    width: 250px;
+    float: right;
+}
+
+.float {
+    width: 300px;
+}
