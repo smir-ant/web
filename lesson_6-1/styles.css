@@ -1,0 +1,19 @@
+table .android .phone::before {
+    content: "😎";
+}
+
+table .iphone .phone::before {
+    content: "🍎";
+}
+
+table .price::before {
+    content: "💸";
+}
+
+th, td {
+    border: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+}

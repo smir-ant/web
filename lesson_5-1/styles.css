@@ -1,0 +1,33 @@
+body {
+    background-color: peachpuff;
+}
+
+button {
+background-color: gray;
+border-radius: 50px;
+width: 167px;
+height: 52px;
+font-family: "Arial Black";
+color: azure;
+border: 10px darkgreen solid;
+}
+
+.fig1 {
+    position: absolute;
+    width: 45px;
+    height: 42px;
+    left: 50px;
+    top: 39px;
+
+    background: #13F8CE;
+}
+
+.fig2 {
+    position: absolute;
+width: 75px;
+height: 42px;
+left: 101px;
+top: 37px;
+
+background: #13F8CE;
+}
