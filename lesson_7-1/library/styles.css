@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Первый экран */
+.welcome {
+    text-align: center;
+    padding: 120px 0;
+    background: linear-gradient(90deg, #7c1d00, #fff788);
+}
+
+.welcome-img {
+    width: 160px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.welcome-heading {
+    font-family: 'Pacifico', cursive;
+    color: blanchedalmond;
+    font-size: 35pt;
+    margin-bottom: 40px;
+}
+
+.welcome-text {
+    font-family: 'Pacifico', cursive;
+    color: ghostwhite;
+    font-size: 20pt;
+}
+
+/* Новинки */
+.new {
+    text-align: center;
+    padding: 75px 0;
+}
+
+.new-heading {
+    font-family: 'Pacifico', cursive;
+    color: #FF715B;
+    font-size: 30pt;
+    margin-bottom: 45px;
+}
+
+.book-card {
+    display: inline-block;  /* Карточки в ряд */
+    width: 45%;
+    height: 270px;
+    background-color: #FFF9F1;
+    border: 3px solid #F5B6AC;
+    border-radius: 22px;
+    padding: 15px 10px;
+    margin: 0 10px;
+}
+
+.book-cover {
+    width: 160px;
+    height: 210px;
+}
+
+.book-intro {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    float: right;
+    width: 70%;
+}
+
+.book-link {
+    display: inline-block;
+    font-size: 17pt;
+    font-family: 'Pacifico', cursive;
+}
