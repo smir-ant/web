@@ -1,0 +1,55 @@
+/* 
+.cube {
+    height: 10vw;
+    width: 10vw;
+    margin: auto;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.circle {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.yellow {
+    background-color: gold;
+    opacity: 0.5;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
+    }
+
+div p {
+    color:white
+}
+
+*/
+
+.message {
+    width: 200px;
+    height: 100px;
+    background-color: palevioletred;
+}
+
+.warning {
+    color: azure;
+}
+
+.warning::before, .warning::after {
+    content: "⚠";
+}
