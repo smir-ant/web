@@ -70,4 +70,43 @@
     display: inline-block;
     font-size: 17pt;
     font-family: 'Pacifico', cursive;
+    line-height: 35px;
+    margin-top: 35px;
+}
+
+.prize {
+    background: linear-gradient(90deg, #7c1d00, #fff788);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.prize-heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 25pt;
+    color: white;
+    padding-top: 50px;
+}
+
+.prize-icons {
+    font-size: 18pt;
+    display: block;
+}
+
+.prize-list {
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    width: 320px;
+    text-align: left;
+    margin: 10px 60px 0;
+}
+
+h3 {
+    font-size: 25pt;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: none;
+    font-size: 24px;
+    padding-left: 50px;
 }
