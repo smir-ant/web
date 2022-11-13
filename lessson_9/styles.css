@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, #ff000090, #ffff00), url("https://media.tenor.com/YxpnJdn7aKoAAAAC/stargaze-anime.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    font-size: 22px;
+    padding: 20px 0;
+}
+
+form {
+    background: rgba(80, 65, 144, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom:  25px;
+}
+
+label {
+    display: block;
+    margin:  25px 0;
+}
+
+input, textarea {
+    background-color: transparent;
+    padding: 15px;
+    border: 4px solid white;
+    border-radius: 25px;
+    width: 100%;
+
+    color: white;
+    font-size: 24px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 20px;
+}
+
+.left-side {
+    text-align: left;
+}
+
+button {
+    border: none;
+    width: 200px;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(90deg, #540D8C, #1F0D8C);
+
+}
+
+
+

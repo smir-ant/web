@@ -11,4 +11,42 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: white;
+}
+
+.text {
+    width: 60%;
+    margin: auto;
+    padding-top: 18vh;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Marck Script', cursive;
+    font-size: 5vw;
+    line-height: 10vw;
+}
+
+hr {
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+p {
+    font-family: 'Poiret One', cursive;
+    font-size: 2vw;
+    line-height: 3vw;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+button {
+    font-family: 'Marck Script', cursive;
+    font-size: 2.5vw;
+    padding: 2vh;
+    background-color: transparent;
+    color: white;
+    border: 1vh dotted white;
 }
