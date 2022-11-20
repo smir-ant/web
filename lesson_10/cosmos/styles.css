@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(160deg, #BEBDFF 0%, rgba(218, 230, 250, 0.9) 60%, rgba(250, 250, 170, 0.9) 120%) no-repeat;
+    padding:  150px 0;
+}
+
+.article {
+    width: 60%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 7px solid #8ac48a;
+    padding: 60px 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.cosmos {
+    position: absolute;
+    top: -90px;
+    z-index: 1;
+}
+
+.text {
+    height: 205px;
+    overflow: scroll;
+}
+
+.rocket {
+    position: absolute;
+    left: 40px;
+    bottom: 50%;
+    transform: rotate(45deg);
+}
+
+.heading {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(64, 64, 144);
+    background-color: wheat;
+    padding: 20px 0 30px;
+    position: sticky;
+    top: 0;
+}
+
+.scheme {
+    padding: 0 100px;
+}
+
+.spacesuit-scheme {
+    display: inline-block;
+    width: 600px;
+    position: relative;
+}
+
+.spacesuit {
+    width: 100%;
+}
+
+.mark {
+    position: absolute;
+}
+
+.mark1 {
+    top: -30px;
+    left: 250px;
+}
+
+.mark2 {
+    top: 35%;
+    left: 350px;
+}
+
+.mark3 {
+    top: 33%;
+    left: 0;
+}
+
+.mark4 {
+    top:0;
+    left: 170px;
+}
+
+.mark5 {
+    bottom: 217px;
+    right: 210px;
+}
+
+.items {
+    float: right;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 50px;
+    color: #45294C;
+    margin-right: 100px;
+}
+
+li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+li::before {
+    display: inline-block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: -47px;
+    top: 2px
+}
+
+li:nth-child(1)::before {
+    content: url("img/mark1.svg");
+}
+
+li:nth-child(2)::before {
+    content: url("img/mark2.svg");
+}
+
+li:nth-child(3)::before {
+    content: url("img/mark3.svg");
+}
+
+li:nth-child(4)::before {
+    content: url("img/mark4.svg");
+}
+
+li:nth-child(5)::before {
+    content: url("img/mark5.svg");
+}
+
