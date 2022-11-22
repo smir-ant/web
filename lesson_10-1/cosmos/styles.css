@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(160deg, #BEBDFF, rgb(255, 255, 180)) no-repeat;
+    padding: 150px 0;
+}
+
+.article {
+    width: 60%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 7px solid aliceblue;
+    padding: 60px 100px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.cosmos {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.heading {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(21, 31, 108);
+    padding: 20px 0 40px;
+    background-color:azure;
+    position: sticky;
+    top: 0;
+}
+
+.text {
+    height: 200px;
+    overflow: scroll;
+}
+
+.rocket {
+    position: absolute;
+    left: 40px;
+    bottom: 50%;
+    transform: rotate(330deg);
+}
+
+.scheme {
+    padding: 0 100px;
+}
+
+.spacesuit-scheme {
+    display: inline-block;
+    width: 600px;
+    position: relative;
+}
+
+.man {
+    width: 100%;
+}
+
+.mark {
+    position: absolute;
+}
+
+.mark1 {
+    top: -30px;
+    left: 250px
+}
+
+.mark2 {
+    top: 35%;
+    left: 350px;
+}
+
+.mark3 {
+    top:33%;
+    left: 0;
+}
+
+.mark4 {
+    top: 0;
+    left: 170px;
+}
+
+.mark5 {
+    bottom: 210px;
+    right: 210px;
+}
+
+.items {
+    float: right;
+    font-weight: 800;
+    font-size: 32px;
+    color: rgb(21, 31, 108);
+    margin-right: 250px;
+}
+
+li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+li::before {
+    display: inline-block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: -47px;
+    top: -3px;
+}
+
+li:nth-child(1)::before {
+    content: url("img/mark1.svg");
+}
+
+li:nth-child(2)::before {
+    content: url("img/mark2.svg");
+}
+
+li:nth-child(3)::before {
+    content: url("img/mark3.svg");
+}
+
+li:nth-child(4)::before {
+    content: url("img/mark4.svg");
+}
+
+li:nth-child(5)::before {
+    content: url("img/mark5.svg");
+}
