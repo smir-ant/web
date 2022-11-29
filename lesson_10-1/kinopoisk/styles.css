@@ -20,5 +20,64 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 0.4s linear;
+    transition: all 0.4s ease;
+}
+
+.card1 {
+    background-image: url("img/film1-1.webp");
+}
+
+.card2 {
+    background-image: url("img/film2-1.webp");
+}
+
+.card2:hover {
+    background-image: url("img/film2-2.webp");
+}
+
+.card3 {
+    background-image: url("img/film3-1.webp");
+}
+
+.card3:hover {
+    background-image: url("img/film3-2.webp");
+}
+
+.card4 {
+    background-image: url("img/film4-1.webp");
+}
+
+.card5 {
+    background-image: url("img/film5-1.webp");
+}
+
+.card5:hover {
+    background-image: url("img/film5-2.webp");
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.card1.effect:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("img/film1-2.webp");
+    opacity: 0;
+}
+
+.card4.effect:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("img/film4-2.webp");
+    opacity: 0;
+    pointer-events: none;
+}
+
+.effect:hover:before {
+    opacity: 1;
 }
