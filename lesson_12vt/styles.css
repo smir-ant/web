@@ -1,0 +1,291 @@
+:root {
+    --btn-color: #CE0002;
+    --yellow: #FFEE2F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #FAFAFA;
+    font-weight: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.heading, h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.heading {
+    max-width: 178px;
+
+}
+
+.btn {
+    font-weight: 700;
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Разделения для главной странице и игр */
+/* жёлтый верхний прямоугольник */
+.main-header::before {
+    width: 85%;
+    background-color: var(--yellow);
+}
+
+.games-header p {
+    max-width: 40%;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.header-top {
+    padding: 45px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav a {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0 22px;
+}
+
+.header-nav a.active {
+    color: #FF0000;
+}
+
+.header-content {
+    padding: 0 60px;
+    position: relative;
+    margin-top: 100px;
+}
+
+h1 {
+    max-width: 60%;
+    margin-bottom: 40px;
+}
+
+.header-img {
+    position: absolute;
+    right: 50px;
+    top: -100px;
+}
+
+.main-header-content img {
+    width: 40%;
+}
+
+.main-header-content q {
+    display: inline-block;
+    max-width: 450px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main-header-btn {
+    height: 120px;
+    width: 120px;
+    padding: 15px;
+    padding-bottom: 45px;
+    font-size: 16px;
+    line-height: 25px;
+    position: relative;
+    margin: 0 60px;
+}
+
+.main-header-btn::after {
+    content: url("img/arrow.png");
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team {
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 85px;
+}
+
+.team::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: var(--yellow);
+    z-index: -1;
+}
+
+.team h2 {
+    max-width: 600px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 250px;
+}
+
+.member h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.member h4 {
+    margin-bottom: 20px;
+}
+
+.member p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #646464;
+}
+
+.member img {
+    width: 150px;
+}
+
+/* Games page */
+.up-btn {
+    width: 80px;
+    height: 80px;
+    background-color: #202020;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    z-index: 10;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+}
+
+.up-btn::before {
+    content: url("img/arrow-sm.png");
+}
+
+.game-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 150px;
+}
+
+.game-box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.game-box>div, .game-box>img {
+    width: 45%;
+}
+
+.more-btn {
+    width: 190px;
+    height: 90px;
+    margin-top: 50px;
+    padding: 25px;
+    margin-left: 50px;
+    font-size: 20px;
+    position: relative;
+}
+
+.more-btn::after {
+    content: url("img/arrow.png");
+}
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #EFEFEF;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7E7E7E;
+}
+
+.footer a {
+    margin: 0 45px;
+}
+
+/* Project */
+.projects {
+    background-color: white;
+    padding: 100px 0 60px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-card {
+    width: 30%;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.project-card h3 {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
