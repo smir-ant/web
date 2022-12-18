@@ -1,0 +1,214 @@
+:root {
+    --btn-red: #CE0002;
+    --yellow: #FFEF2F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+.logo {
+    position: fixed;
+    z-index: 10;
+}
+
+/* header */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-top {
+    padding: 23px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active-link {
+    color: #FF0000;
+}
+
+nav a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 22px;
+}
+
+.btn {
+    background: var(--btn-red);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.btn::after  {
+    content: url("img/arrow.png");
+}
+
+.header-btn {
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    text-transform: uppercase;
+    width: 60%;
+}
+
+q {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    display: inline-block;
+    max-width: 460px;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    background-color: var(--yellow);
+    z-index: -1;
+}
+
+.header-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+
+.header-content {
+    position: relative;
+    margin-top: 100px;
+    padding-left: 50px;
+}
+
+/* header */
+
+/* team */
+
+.team {
+    position: relative;
+    width: 85%;
+    margin: 150px auto;
+    padding-top: 150px;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.team::before {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: var(--yellow);
+    z-index: -1;
+}
+
+.heading {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 87px;
+    text-transform: uppercase;
+    max-width: 603px;
+}
+
+.team-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member {
+    width: 23%;
+}
+
+.member img {
+    width: 180px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+}
+
+.member h3 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+.member h4 {
+    margin-bottom: 10px;
+}
+
+.G-red {
+    color: var(--btn-red);
+}
+
+.footer img {
+    width: 30px;
+}
+
+.footer {
+    background-color: #EFEFEF;
+    padding: 18px 25px;
+    display: flex;
+    /* justify-content - выравнивание по основной оси */
+    justify-content: space-between;  
+    /* align-items - выравнивание побочной оси */
+    align-items: center;
+
+    color: #7E7E7E;
+}
+
+.footer a {
+    font-size: 15px;
+}
+
+.game-header-btn {
+    display: block;
+    width: 190px;
+    height: 160px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
