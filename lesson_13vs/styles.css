@@ -210,5 +210,131 @@ q {
 }
 
 
+/* GAMES PAGE */
+.game-box {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   margin-bottom: 150px;
+}
+
+.game-box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.game-box>div, .game-box>img {
+    width: 45%;
+}
+
+.game-box h3, .game-box h4 {
+    margin-bottom: 18px;
+}
+
+.more-btn {
+    width: 190px;
+    height: 95px;
+    margin-top: 60px;
+    padding: 25px;
+    padding-left: 30px;
+    font-size: 22px;
+    position: relative;
+}
+
+.more-btn:after {
+    content: url(img/arrow.png);
+    display: block;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #EEE;
+    padding: 100px 0 60px;
+}
+
+.project-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start; 
+}
+
+.project-card {
+    width: 30%;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.project-card h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.project-card img {
+    width: 100%;
+    margin-bottom: 22px;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-btn {
+    padding: 20px;
+    width: 220px;
+    height: 70px;
+    font-size: 22px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.project-btn:after {
+    content: url(img/arrow.png);
+}
+
+
+/* Вакансии */
+.vacancy {
+    margin-bottom: 50px;
+}
+
+.vacancy h2 {
+    margin-bottom: 50px;
+}
+
+.vacancy-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(190px, auto);
+    gap: 24px;
+}
+
+.vacancy-box {
+    background-color: #F5F5F5;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.vacancy-box:hover {
+    background-color: var(--btn-red);
+    color:white;
+}
+
+.vacancy-box h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    max-width: 300px;
+}
+
+
+
+
 
 
