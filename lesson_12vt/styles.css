@@ -253,7 +253,11 @@ h1 {
 
 /* Footer */
 .footer {
-    background-color: #EFEFEF;
+    /* background-color: #EFEFEF; */
+    background-color: #ffffff;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 13px ), repeating-linear-gradient( #EFEFEF55, #EFEFEF );
+/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 13px ), repeating-linear-gradient( #FFEE2F55, #FFEE2F ); */
     padding: 18px 25px;
     display: flex;
     justify-content: space-between;
@@ -332,6 +336,7 @@ h1 {
     background-color: #F5F5F5;
     position: relative;
     cursor: pointer;
+    transition: all 0.6s ease;
 }
 
 .vacancy-box:hover {
@@ -434,6 +439,21 @@ box-shadow:  8px 8px 16px #96c5d6,
 .news-team img {
     filter: invert(50%) sepia(8%) saturate(3912%) hue-rotate(150deg) brightness(90%) contrast(91%);}
 
-.zvezdochka {
-    font-size: 22px;
+.news-text {
+    font-size: 24px;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+.glass {
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 30px;
+margin-bottom: 30px;
 }
