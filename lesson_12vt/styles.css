@@ -457,3 +457,27 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 padding: 30px;
 margin-bottom: 30px;
 }
+
+.burger-menu {
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--btn-color);
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu:hover {
+    transform: scale(1.1);
+}
+
+.burger-menu>span {
+    display: block;
+    width: 70%;
+    height: 2px;
+    margin: 5px 0;
+    background-color: var(--btn-color);
+}
